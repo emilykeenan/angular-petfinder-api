@@ -4,19 +4,24 @@
     <meta charset="utf-8">
     <title></title>
     <script type="text/javascript" src="vendor/angular.min.js"></script>
+    <script type="text/javascript" src="/vendor/angular-route.min.js"></script>
     <script type="text/javascript" src="scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/services/dataFactory.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/dogController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/catController.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/barnyardController.js"></script>
     <link rel="stylesheet" href="/styles/bootstrap.min.css">
   </head>
-  <body ng-app="app" ng-controller="firstController as fc">
+  <body ng-app="pets">
     <header class="jumbotron">
-      <h1 class="container">{{fc.message}} Angular Node Express Starter</h1>
+      <h1 class="container">Angular Node Express Starter</h1>
     </header>
-    <div id="randomPetButtonsContainer">
-      <button></button>
+    <div class="randomButtonContainer">
+      <button><a href="#dogs">Find Random Dog</a></button>
+      <button><a href="#cats">Find Random Cat</a></button>
+      <button><a href="#barnyard">Find Random Barnyard Animal</a></button>
     </div>
-    <div class ="container" >
-      <img ng-src="{{fc.animal.media.photos.photo[2].$t}}" />
-      <p>{{fc.animal.description.$t}}</p>
+    <div class="container" ng-view>
     </div>
   </body>
 </html>

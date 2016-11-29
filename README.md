@@ -1,2 +1,2 @@
-# angular-node-express-starter
-This is a starting point for Prime Academy students building an angular, node, and express app.
+# angular-petfinder-api
+A site for retrieving a random pet from the petfinder API
