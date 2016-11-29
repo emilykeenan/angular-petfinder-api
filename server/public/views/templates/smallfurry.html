@@ -1,7 +1,7 @@
-<div class="container pet_container">
-  <button class="btn btn-default randomize_button" ng-click="sfc.getRandomPet(sfc.animalType)">Find another Small&Furry Friend!</button>
+<div class="container pet_container ">
   <h2>{{sfc.animal.name.$t}}</h2>
   <img ng-src="{{sfc.animal.media.photos.photo[2].$t}}" />
   <p>{{sfc.animal.description.$t}}</p>
   <p>To reach {{sfc.animal.name.$t}} call {{sfc.animal.contact.phone.$t}}</p>
 </div>
+<button class="btn btn-default randomize_button" ng-click="sfc.getRandomPet(sfc.animalType)">Find another Small&Furry Friend!</button>
