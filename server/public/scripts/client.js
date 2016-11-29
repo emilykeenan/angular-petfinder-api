@@ -18,6 +18,11 @@ pets.config(['$routeProvider', function($routeProvider) {
             controller: 'BarnyardController',
             controllerAs: 'bc'
         })
+        .when('/shelters', {
+            templateUrl: '/views/templates/shelters.html',
+            controller: 'ShelterController',
+            controllerAs: 'sc'
+        })
         .otherwise({
             redirectTo: '/dogs'
         });

@@ -1,0 +1,6 @@
+<div class="container pet_container" ng-repeat="shelter in sc.shelters">
+  <h2>{{shelter.name.$t}}</h2>
+  <img ng-src="{{shelter.media.photos.photo[2].$t}}" />
+  <p>{{shelter.city.$t}}, {{shelter.state.$t}}</p>
+  <p>To reach {{shelter.name.$t}} call {{shelter.contact.phone.$t}} or email {{shelter.contact.email.$t}}</p>
+</div>
