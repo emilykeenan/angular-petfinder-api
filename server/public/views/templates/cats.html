@@ -1,4 +1,5 @@
 <div class="container pet_container">
+  <button class="btn btn-default randomize_button" ng-click="cc.getRandomPet(cc.animalType)">Find another Random Cat!</button>
   <h2>{{cc.animal.name.$t}}</h2>
   <img ng-src="{{cc.animal.media.photos.photo[2].$t}}" />
   <p>{{cc.animal.description.$t}}</p>

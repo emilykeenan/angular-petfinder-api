@@ -9,7 +9,7 @@ pets.controller('DogController', ['$http', "DataFactory", function($http, DataFa
   console.log(self.key);
   console.log(self.message);
 
-  function getRandomPet(animalType){
+  this.getRandomPet = function(animalType){
     var query = 'http://api.petfinder.com/'; // baseURL for API
     query += 'pet.getRandom'; // selecting the method we would like to return
     query += '?key=' + self.key; // Giving petfinder our key
@@ -27,6 +27,6 @@ pets.controller('DogController', ['$http', "DataFactory", function($http, DataFa
 
   }
 
-  getRandomPet(self.animalType);
+  this.getRandomPet(self.animalType);
 
 }]);

@@ -18,6 +18,11 @@ pets.config(['$routeProvider', function($routeProvider) {
             controller: 'BarnyardController',
             controllerAs: 'bc'
         })
+        .when('/smallfurry', {
+            templateUrl: '/views/templates/smallfurry.html',
+            controller: 'SmallFurryController',
+            controllerAs: 'sfc'
+        })
         .when('/shelters', {
             templateUrl: '/views/templates/shelters.html',
             controller: 'ShelterController',

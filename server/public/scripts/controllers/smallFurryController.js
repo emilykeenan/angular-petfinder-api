@@ -1,10 +1,10 @@
-pets.controller('CatController', ['$http', "DataFactory", function($http, DataFactory) {
+pets.controller('SmallFurryController', ['$http', "DataFactory", function($http, DataFactory) {
 
   var self = this;
-  self.animalType = 'cat';
+  self.animalType = 'smallfurry';
   self.key = DataFactory.key;
   self.animal = {};
-  self.message = 'cat controller is running';
+  self.message = 'smallfurry controller is running';
 
   console.log(self.key);
   console.log(self.message);
