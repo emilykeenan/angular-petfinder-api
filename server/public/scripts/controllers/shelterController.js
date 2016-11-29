@@ -4,15 +4,18 @@ pets.controller('ShelterController', ['$http', "DataFactory", function($http, Da
   self.key = DataFactory.key;
   self.shelters = [];
   self.message = 'shelter controller is running';
+  self.zip = '';
+  self.searched = false;
 
   console.log(self.key);
   console.log(self.message);
 
-  function getRandomShelter(){
+  this.getShelters = function(){
+    self.searched = true;
     var query = 'http://api.petfinder.com/'; // baseURL for API
     query += 'shelter.find'; // selecting the method we would like to return
     query += '?key=' + self.key; // Giving petfinder our key
-    query += '&location=55409';
+    query += '&location=' + self.zip;
     query += '&count=25';
     query += '&format=json'; // Telling petfinder we want our response to be JSON
     query += '&output=basic'; // Telling petfinder what data we want (more than just id)
@@ -24,9 +27,8 @@ pets.controller('ShelterController', ['$http', "DataFactory", function($http, Da
       console.log(response);
       self.shelters = response.data.petfinder.shelters.shelter;
     });
+    self.zip = '';
 
   }
-
-  getRandomShelter();
 
 }]);

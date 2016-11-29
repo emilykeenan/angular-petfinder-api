@@ -20,7 +20,7 @@ body {
   text-align: center;
 }
 
-.pet_container {
+.pet_container, .shelter_container {
   width: 800px;
   background: white;
   text-align: justify;
@@ -28,6 +28,10 @@ body {
   padding: 40px;
   border-radius: 30px;
   margin-bottom: 20px;
+}
+
+.shelter_container {
+  text-align: center;
 }
 
 h2 {
@@ -43,4 +47,13 @@ h2 {
 img {
   float: left;
   margin-right: 30px;
+}
+
+form {
+  margin: 0 auto 15px auto;
+  width: 300px;
+}
+
+form input {
+  width: 300px;
 }

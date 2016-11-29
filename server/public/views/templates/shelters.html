@@ -1,6 +1,14 @@
-<div class="container pet_container" ng-repeat="shelter in sc.shelters">
+<form>
+  <div class="form-group">
+  <label for="zip">Zip Code:</label>
+  <input type="text" pattern="\d{5}-?(\d{4})?" ng-model="sc.zip" name="zip" class="form-control"/>
+</div>
+<button class="btn btn-default" ng-click="sc.getShelters()">Go</button>
+</form>
+
+<div class="container shelter_container" ng-repeat="shelter in sc.shelters" ng-show="sc.searched">
   <h2>{{shelter.name.$t}}</h2>
   <img ng-src="{{shelter.media.photos.photo[2].$t}}" />
   <p>{{shelter.city.$t}}, {{shelter.state.$t}}</p>
-  <p>To reach {{shelter.name.$t}} call {{shelter.contact.phone.$t}} or email {{shelter.contact.email.$t}}</p>
+  <p>To reach {{shelter.name.$t}} call {{shelter.phone.$t}} or email {{shelter.email.$t}}</p>
 </div>
