@@ -1,5 +1,6 @@
-<div class="container">
-  {{cc.message}}
-  {{cc.animal.contact.phone.$t}}
+<div class="container pet_container">
+  <h2>{{cc.animal.name.$t}}</h2>
+  <img ng-src="{{cc.animal.media.photos.photo[2].$t}}" />
+  <p>{{cc.animal.description.$t}}</p>
+  <p>To reach {{cc.animal.name.$t}} call {{cc.animal.contact.phone.$t}}</p>
 </div>
-<img ng-src="{{cc.animal.media.photos.photo[2].$t}}" />

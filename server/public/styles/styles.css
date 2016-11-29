@@ -1,0 +1,46 @@
+body {
+  margin: 0px;
+  font-family: 'Cabin', sans-serif;
+  background: url('/assets/images/background.png');
+}
+
+.jumbotron {
+  background: #a8a8a8 url('/assets/images/header.jpg') right bottom no-repeat;
+  background-size: 20%;
+}
+
+.jumbotron h1 {
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: 'Gochi Hand', cursive;
+  background: none;
+}
+
+.container {
+  text-align: center;
+}
+
+.pet_container {
+  width: 800px;
+  background: white;
+  text-align: justify;
+  font-size: 14px;
+  padding: 40px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+#navContainer li a {
+  color: white;
+  background: grey;
+  margin-left: 5px;
+}
+
+img {
+  float: left;
+  margin-right: 30px;
+}
