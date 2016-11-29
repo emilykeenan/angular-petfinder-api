@@ -2,7 +2,7 @@ var app = angular.module('app', []);
 
 app.controller('firstController', ['$http', function($http) {
   console.log('firstController up and running');
-  var key = 'b900e0d5e332753a460a64eaa8de00fd';
+  var key = 'ac37ea50612c55186b0cae6129df1df0';
   var self = this;
 
   self.animal = {};
